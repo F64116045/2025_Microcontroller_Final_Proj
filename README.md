@@ -1,4 +1,4 @@
-# PIC18F HMI Interactive Gaming Console
+# 2025 Microcontroller Final Project - PIC18F Interactive Gaming System
 
 ## Project Overview
 
