@@ -1,0 +1,457 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h: 4: typedef struct {
+[s S7 `i 1 `i 1 `i -> 9 `i `uc 1 `i 1 `i 1 `i 1 `l 1 `i 1 `ul 1 `i 1 `i 1 ]
+[n S7 . SCORE_P1 SCORE_P2 WHAC_A_MOLE INPUT HIT MISS NOT_HIT_NOT_MISS REMAINING_TIME WINNER tick100us PLAYER1_STATE PLAYER2_STATE ]
+"56 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdlib.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdlib.h: 56: void srand (unsigned);
+[v _srand `(v ~T0 @X0 0 ef1`ui ]
+"55
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdlib.h: 55: int rand (void);
+[v _rand `(i ~T0 @X0 0 ef ]
+"6 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 6: static int active_mole = -1;
+[v _active_mole `i ~T0 @X0 1 s ]
+[i _active_mole
+-U -> 1 `i
+]
+"7
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 7: static int prev_player1_state = 0;
+[v _prev_player1_state `i ~T0 @X0 1 s ]
+[i _prev_player1_state
+-> 0 `i
+]
+"8
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 8: static int prev_player2_state = 0;
+[v _prev_player2_state `i ~T0 @X0 1 s ]
+[i _prev_player2_state
+-> 0 `i
+]
+"9
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 9: static long spawn_counter = 0;
+[v _spawn_counter `l ~T0 @X0 1 s ]
+[i _spawn_counter
+-> -> 0 `i `l
+]
+"10
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 10: static long stay_counter = 0;
+[v _stay_counter `l ~T0 @X0 1 s ]
+[i _stay_counter
+-> -> 0 `i `l
+]
+"11
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 11: static long spawn_interval_ticks = 0;
+[v _spawn_interval_ticks `l ~T0 @X0 1 s ]
+[i _spawn_interval_ticks
+-> -> 0 `i `l
+]
+"12
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 12: static long stay_time_ticks = 0;
+[v _stay_time_ticks `l ~T0 @X0 1 s ]
+[i _stay_time_ticks
+-> -> 0 `i `l
+]
+"13
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 13: static unsigned long last_tick = 0;
+[v _last_tick `ul ~T0 @X0 1 s ]
+[i _last_tick
+-> -> -> 0 `i `l `ul
+]
+"15
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 15: WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE(WHAC_A_MOLE_OUTPUT_TABLE table) {
+[v _WHAC_A_MOLE_UPDATE `(S7 ~T0 @X0 1 ef1`S7 ]
+{
+[e :U _WHAC_A_MOLE_UPDATE ]
+[v _table `S7 ~T0 @X0 1 r1 ]
+[f ]
+"16
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 16:     unsigned long current_tick = table.tick100us;
+[v _current_tick `ul ~T0 @X0 1 a ]
+[e = _current_tick . _table 9 ]
+"17
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 17:     unsigned long delta_ticks = current_tick - last_tick;
+[v _delta_ticks `ul ~T0 @X0 1 a ]
+[e = _delta_ticks - _current_tick _last_tick ]
+"18
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 18:     last_tick = current_tick;
+[e = _last_tick _current_tick ]
+"21
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 21:     table.HIT = 0;
+[e = . _table 4 -> 0 `i ]
+"22
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 22:     table.MISS = 0;
+[e = . _table 5 -> 0 `i ]
+"23
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 23:     table.NOT_HIT_NOT_MISS = 1;
+[e = . _table 6 -> 1 `i ]
+"25
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 25:     spawn_interval_ticks = 1600;
+[e = _spawn_interval_ticks -> -> 1600 `i `l ]
+"26
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 26:     stay_time_ticks = 3200;
+[e = _stay_time_ticks -> -> 3200 `i `l ]
+"29
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 29:     int input_idx = -1;
+[v _input_idx `i ~T0 @X0 1 a ]
+[e = _input_idx -U -> 1 `i ]
+"30
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 30:     if (table.INPUT >= '1' && table.INPUT <= '9') {
+[e $ ! && >= -> . _table 3 `ui -> 49 `ui <= -> . _table 3 `ui -> 57 `ui 13  ]
+{
+"31
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 31:         input_idx = table.INPUT - '1';
+[e = _input_idx -> - -> . _table 3 `ui -> 49 `ui `i ]
+"32
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 32:     }
+}
+[e :U 13 ]
+"35
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 35:     int *current_score = ((void*)0);
+[v _current_score `*i ~T0 @X0 1 a ]
+[e = _current_score -> -> -> 0 `i `*v `*i ]
+"36
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 36:     int current_playing = 0;
+[v _current_playing `i ~T0 @X0 1 a ]
+[e = _current_playing -> 0 `i ]
+"39
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 39:     if (table.PLAYER1_STATE == 1 && prev_player1_state != 1) {
+[e $ ! && == . _table 10 -> 1 `i != _prev_player1_state -> 1 `i 14  ]
+{
+"41
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 41:         table.SCORE_P1 = 0;
+[e = . _table 0 -> 0 `i ]
+"42
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 42:         table.REMAINING_TIME = (long)(60.0 * 4000);
+[e = . _table 7 -> * .60.0 -> -> 4000 `i `d `l ]
+"43
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 43:         active_mole = -1;
+[e = _active_mole -U -> 1 `i ]
+"44
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 44:         spawn_counter = 0;
+[e = _spawn_counter -> -> 0 `i `l ]
+"45
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 45:         for(int j=0; j<9; j++)
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 9 `i 15  ]
+[e $U 16  ]
+[e :U 15 ]
+"46
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 46:             table.WHAC_A_MOLE[j] = 0;
+[e = *U + &U . _table 2 * -> -> _j `ui `ux -> -> # *U &U . _table 2 `ui `ux -> 0 `i ]
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 9 `i 15  ]
+[e :U 16 ]
+}
+"47
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 47:         srand(table.tick100us);
+[e ( _srand (1 -> . _table 9 `ui ]
+"48
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 48:     }
+}
+[e :U 14 ]
+"50
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 50:     if (table.PLAYER2_STATE == 1 && prev_player2_state != 1) {
+[e $ ! && == . _table 11 -> 1 `i != _prev_player2_state -> 1 `i 18  ]
+{
+"52
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 52:         table.SCORE_P2 = 0;
+[e = . _table 1 -> 0 `i ]
+"53
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 53:         table.REMAINING_TIME = (long)(60.0 * 4000);
+[e = . _table 7 -> * .60.0 -> -> 4000 `i `d `l ]
+"54
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 54:         active_mole = -1;
+[e = _active_mole -U -> 1 `i ]
+"55
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 55:         spawn_counter = 0;
+[e = _spawn_counter -> -> 0 `i `l ]
+"56
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 56:         for(int j=0; j<9; j++)
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 9 `i 19  ]
+[e $U 20  ]
+[e :U 19 ]
+"57
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 57:             table.WHAC_A_MOLE[j] = 0;
+[e = *U + &U . _table 2 * -> -> _j `ui `ux -> -> # *U &U . _table 2 `ui `ux -> 0 `i ]
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 9 `i 19  ]
+[e :U 20 ]
+}
+"58
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 58:         srand(table.tick100us);
+[e ( _srand (1 -> . _table 9 `ui ]
+"59
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 59:     }
+}
+[e :U 18 ]
+"62
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 62:     if (table.PLAYER1_STATE == 1) {
+[e $ ! == . _table 10 -> 1 `i 22  ]
+{
+"64
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 64:         current_playing = 1;
+[e = _current_playing -> 1 `i ]
+"65
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 65:         current_score = &table.SCORE_P1;
+[e = _current_score &U . _table 0 ]
+"66
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 66:     } else if (table.PLAYER2_STATE == 1) {
+}
+[e $U 23  ]
+[e :U 22 ]
+[e $ ! == . _table 11 -> 1 `i 24  ]
+{
+"68
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 68:         current_playing = 2;
+[e = _current_playing -> 2 `i ]
+"69
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 69:         current_score = &table.SCORE_P2;
+[e = _current_score &U . _table 1 ]
+"70
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 70:     }
+}
+[e :U 24 ]
+[e :U 23 ]
+"73
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 73:     if (current_playing != 0) {
+[e $ ! != _current_playing -> 0 `i 25  ]
+{
+"76
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 76:         if (table.REMAINING_TIME > 0) {
+[e $ ! > . _table 7 -> -> 0 `i `l 26  ]
+{
+"77
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 77:             table.REMAINING_TIME -= delta_ticks;
+[e =- . _table 7 -> _delta_ticks `l ]
+"78
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 78:         }
+}
+[e :U 26 ]
+"81
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 81:         if (input_idx != -1) {
+[e $ ! != _input_idx -U -> 1 `i 27  ]
+{
+"82
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 82:             if (active_mole == input_idx) {
+[e $ ! == _active_mole _input_idx 28  ]
+{
+"84
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 84:                 (*current_score) += 10;
+[e =+ *U _current_score -> 10 `i ]
+"85
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 85:                 table.HIT = 1;
+[e = . _table 4 -> 1 `i ]
+"86
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 86:                 table.NOT_HIT_NOT_MISS = 0;
+[e = . _table 6 -> 0 `i ]
+"87
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 87:                 table.WHAC_A_MOLE[input_idx] = 0;
+[e = *U + &U . _table 2 * -> -> _input_idx `ui `ux -> -> # *U &U . _table 2 `ui `ux -> 0 `i ]
+"88
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 88:                 active_mole = -1;
+[e = _active_mole -U -> 1 `i ]
+"89
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 89:                 spawn_counter = 0;
+[e = _spawn_counter -> -> 0 `i `l ]
+"90
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 90:             } else {
+}
+[e $U 29  ]
+[e :U 28 ]
+{
+"92
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 92:                 (*current_score) -= 5;
+[e =- *U _current_score -> 5 `i ]
+"93
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 93:                 table.MISS = 1;
+[e = . _table 5 -> 1 `i ]
+"94
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 94:                 table.NOT_HIT_NOT_MISS = 0;
+[e = . _table 6 -> 0 `i ]
+"95
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 95:             }
+}
+[e :U 29 ]
+"96
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 96:         }
+}
+[e :U 27 ]
+"99
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 99:         if (active_mole == -1) {
+[e $ ! == _active_mole -U -> 1 `i 30  ]
+{
+"100
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 100:             spawn_counter += delta_ticks;
+[e =+ _spawn_counter -> _delta_ticks `l ]
+"101
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 101:             if (spawn_counter >= spawn_interval_ticks) {
+[e $ ! >= _spawn_counter _spawn_interval_ticks 31  ]
+{
+"102
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 102:                 spawn_counter = 0;
+[e = _spawn_counter -> -> 0 `i `l ]
+"103
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 103:                 active_mole = rand() % 9;
+[e = _active_mole % ( _rand ..  -> 9 `i ]
+"104
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 104:                 table.WHAC_A_MOLE[active_mole] = 1;
+[e = *U + &U . _table 2 * -> -> _active_mole `ui `ux -> -> # *U &U . _table 2 `ui `ux -> 1 `i ]
+"105
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 105:                 stay_counter = 0;
+[e = _stay_counter -> -> 0 `i `l ]
+"106
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 106:             }
+}
+[e :U 31 ]
+"107
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 107:         } else {
+}
+[e $U 32  ]
+[e :U 30 ]
+{
+"108
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 108:             stay_counter += delta_ticks;
+[e =+ _stay_counter -> _delta_ticks `l ]
+"109
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 109:             if (stay_counter >= stay_time_ticks) {
+[e $ ! >= _stay_counter _stay_time_ticks 33  ]
+{
+"111
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 111:                 (*current_score) -= 2;
+[e =- *U _current_score -> 2 `i ]
+"112
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 112:                 table.MISS = 1;
+[e = . _table 5 -> 1 `i ]
+"113
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 113:                 table.NOT_HIT_NOT_MISS = 0;
+[e = . _table 6 -> 0 `i ]
+"114
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 114:                 table.WHAC_A_MOLE[active_mole] = 0;
+[e = *U + &U . _table 2 * -> -> _active_mole `ui `ux -> -> # *U &U . _table 2 `ui `ux -> 0 `i ]
+"115
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 115:                 active_mole = -1;
+[e = _active_mole -U -> 1 `i ]
+"116
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 116:                 spawn_counter = 0;
+[e = _spawn_counter -> -> 0 `i `l ]
+"117
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 117:             }
+}
+[e :U 33 ]
+"118
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 118:         }
+}
+[e :U 32 ]
+"119
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 119:     }
+}
+[e $U 34  ]
+"122
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 122:     else {
+[e :U 25 ]
+{
+"123
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 123:          for(int j=0; j<9; j++) table.WHAC_A_MOLE[j] = 0;
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 9 `i 35  ]
+[e $U 36  ]
+[e :U 35 ]
+[e = *U + &U . _table 2 * -> -> _j `ui `ux -> -> # *U &U . _table 2 `ui `ux -> 0 `i ]
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 9 `i 35  ]
+[e :U 36 ]
+}
+"124
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 124:          active_mole = -1;
+[e = _active_mole -U -> 1 `i ]
+"125
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 125:     }
+}
+[e :U 34 ]
+"127
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 127:     prev_player1_state = table.PLAYER1_STATE;
+[e = _prev_player1_state . _table 10 ]
+"128
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 128:     prev_player2_state = table.PLAYER2_STATE;
+[e = _prev_player2_state . _table 11 ]
+"129
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 129:     table.INPUT = 0;
+[e = . _table 3 -> -> 0 `i `uc ]
+"131
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 131:     return table;
+[e ) _table ]
+[e $UE 12  ]
+"132
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 132: }
+[e :UE 12 ]
+}
+"135
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 135: WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE_WHO_WIN(WHAC_A_MOLE_OUTPUT_TABLE table) {
+[v _WHAC_A_MOLE_UPDATE_WHO_WIN `(S7 ~T0 @X0 1 ef1`S7 ]
+{
+[e :U _WHAC_A_MOLE_UPDATE_WHO_WIN ]
+[v _table `S7 ~T0 @X0 1 r1 ]
+[f ]
+"138
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 138:     if (table.SCORE_P1 > table.SCORE_P2) {
+[e $ ! > . _table 0 . _table 1 39  ]
+{
+"139
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 139:         table.WINNER = 1;
+[e = . _table 8 -> 1 `i ]
+"140
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 140:     }
+}
+[e $U 40  ]
+"141
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 141:     else if (table.SCORE_P1 < table.SCORE_P2) {
+[e :U 39 ]
+[e $ ! < . _table 0 . _table 1 41  ]
+{
+"142
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 142:         table.WINNER = 2;
+[e = . _table 8 -> 2 `i ]
+"143
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 143:     }
+}
+[e $U 42  ]
+"144
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 144:     else if (table.SCORE_P1 == table.SCORE_P2) {
+[e :U 41 ]
+[e $ ! == . _table 0 . _table 1 43  ]
+{
+"145
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 145:         table.WINNER = 0;
+[e = . _table 8 -> 0 `i ]
+"146
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 146:     }
+}
+[e $U 44  ]
+"147
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 147:     else {
+[e :U 43 ]
+{
+"148
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 148:         table.WINNER = -1;
+[e = . _table 8 -U -> 1 `i ]
+"149
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 149:     }
+}
+[e :U 44 ]
+[e :U 42 ]
+[e :U 40 ]
+"151
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 151:     return table;
+[e ) _table ]
+[e $UE 38  ]
+"153
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.c: 153: }
+[e :UE 38 ]
+}

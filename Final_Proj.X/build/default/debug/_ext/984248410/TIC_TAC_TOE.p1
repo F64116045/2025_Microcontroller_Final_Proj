@@ -1,0 +1,294 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h: 4: typedef struct {
+[s S3 `i -> 9 `i `i 1 `i 1 `i 1 `i 1 ]
+[n S3 . BOARD CURPLAYER DETWINNER SUCCESS CURSOR ]
+"117 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h: 117: int printf(const char *restrict, ...);
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+[v F345 `i ~T0 @X0 -> 3 `i t ]
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 4: int PQ[2][3];
+[v _PQ `F345 ~T0 @X0 -> 2 `i e ]
+"5
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 5: int pt[2];
+[v _pt `i ~T0 @X0 -> 2 `i e ]
+"7
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 7: int detwinner(int i){
+[v _detwinner `(i ~T0 @X0 1 ef1`i ]
+{
+[e :U _detwinner ]
+[v _i `i ~T0 @X0 1 r1 ]
+[f ]
+"8
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 8:     if(PQ[i][2]==-1)
+[e $ ! == *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -U -> 1 `i 5  ]
+"9
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 9:         return 0;
+[e ) -> 0 `i ]
+[e $UE 4  ]
+[e :U 5 ]
+"10
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 10:     if(PQ[i][0]%3==PQ[i][1]%3 && PQ[i][1]%3==PQ[i][2]%3)
+[e $ ! && == % *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i % *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i == % *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i % *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i 6  ]
+"11
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 11:         return 1;
+[e ) -> 1 `i ]
+[e $UE 4  ]
+[e :U 6 ]
+"12
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 12:     if(PQ[i][0]/3==PQ[i][1]/3 && PQ[i][1]/3==PQ[i][2]/3)
+[e $ ! && == / *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i / *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i == / *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i / *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 3 `i 7  ]
+"13
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 13:         return 1;
+[e ) -> 1 `i ]
+[e $UE 4  ]
+[e :U 7 ]
+"14
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 14:     if((PQ[i][0]==4||PQ[i][1]==4||PQ[i][2]==4) && PQ[i][0]+PQ[i][1]+PQ[i][2]==12)
+[e $ ! && || || == *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 4 `i == *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 4 `i == *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 4 `i == + + *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -> 12 `i 8  ]
+"15
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 15:         return 1;
+[e ) -> 1 `i ]
+[e $UE 4  ]
+[e :U 8 ]
+"16
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 16:     return 0;
+[e ) -> 0 `i ]
+[e $UE 4  ]
+"17
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 17: }
+[e :UE 4 ]
+}
+"19
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 19: TTT_OUTPUT_TABLE TTT_START(TTT_OUTPUT_TABLE TTTO_TABLE){
+[v _TTT_START `(S3 ~T0 @X0 1 ef1`S3 ]
+{
+[e :U _TTT_START ]
+[v _TTTO_TABLE `S3 ~T0 @X0 1 r1 ]
+[f ]
+"20
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 20:     for(int i=0;i<3;i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 10  ]
+[e $U 11  ]
+[e :U 10 ]
+"21
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 21:         for(int j=0;j<3;j++)
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 0 `i ]
+[e $ < _j -> 3 `i 13  ]
+[e $U 14  ]
+[e :U 13 ]
+"22
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 22:             PQ[i][j]=-1;
+[e = *U + &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> _j `ui `ux -> -> # *U &U *U + &U _PQ * -> -> _i `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -U -> 1 `i ]
+[e ++ _j -> 1 `i ]
+[e $ < _j -> 3 `i 13  ]
+[e :U 14 ]
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 10  ]
+[e :U 11 ]
+}
+"23
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 23:     for(int i=0;i<9;i++)
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 9 `i 16  ]
+[e $U 17  ]
+[e :U 16 ]
+"24
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 24:         TTTO_TABLE.BOARD[i]=-1;
+[e = *U + &U . _TTTO_TABLE 0 * -> -> _i `ui `ux -> -> # *U &U . _TTTO_TABLE 0 `ui `ux -U -> 1 `i ]
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 9 `i 16  ]
+[e :U 17 ]
+}
+"25
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 25:     pt[0]=0;
+[e = *U + &U _pt * -> -> -> 0 `i `ui `ux -> -> # *U &U _pt `ui `ux -> 0 `i ]
+"26
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 26:     pt[1]=0;
+[e = *U + &U _pt * -> -> -> 1 `i `ui `ux -> -> # *U &U _pt `ui `ux -> 0 `i ]
+"27
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 27:     TTTO_TABLE.CURPLAYER = 0;
+[e = . _TTTO_TABLE 1 -> 0 `i ]
+"28
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 28:     TTTO_TABLE.DETWINNER = 0;
+[e = . _TTTO_TABLE 2 -> 0 `i ]
+"29
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 29:     TTTO_TABLE.SUCCESS = 1;
+[e = . _TTTO_TABLE 3 -> 1 `i ]
+"30
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 30:     return TTTO_TABLE;
+[e ) _TTTO_TABLE ]
+[e $UE 9  ]
+"31
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 31: }
+[e :UE 9 ]
+}
+"33
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 33: TTT_OUTPUT_TABLE TTT_UPDATE(TTT_OUTPUT_TABLE TTTO_TABLE,int P1_PRESS,int P2_PRESS,int num){
+[v _TTT_UPDATE `(S3 ~T0 @X0 1 ef4`S3`i`i`i ]
+{
+[e :U _TTT_UPDATE ]
+[v _TTTO_TABLE `S3 ~T0 @X0 1 r1 ]
+[v _P1_PRESS `i ~T0 @X0 1 r2 ]
+[v _P2_PRESS `i ~T0 @X0 1 r3 ]
+[v _num `i ~T0 @X0 1 r4 ]
+[f ]
+"34
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 34:     if((P1_PRESS==TTTO_TABLE.CURPLAYER)||(P2_PRESS!=TTTO_TABLE.CURPLAYER)){
+[e $ ! || == _P1_PRESS . _TTTO_TABLE 1 != _P2_PRESS . _TTTO_TABLE 1 20  ]
+{
+"35
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 35:         TTTO_TABLE.SUCCESS=0;
+[e = . _TTTO_TABLE 3 -> 0 `i ]
+"36
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 36:         return TTTO_TABLE;
+[e ) _TTTO_TABLE ]
+[e $UE 19  ]
+"37
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 37:     }
+}
+[e :U 20 ]
+"39
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 39:     if(TTTO_TABLE.BOARD[num] > -1){
+[e $ ! > *U + &U . _TTTO_TABLE 0 * -> -> _num `ui `ux -> -> # *U &U . _TTTO_TABLE 0 `ui `ux -U -> 1 `i 21  ]
+{
+"40
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 40:         TTTO_TABLE.SUCCESS=0;
+[e = . _TTTO_TABLE 3 -> 0 `i ]
+"41
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 41:         return TTTO_TABLE;
+[e ) _TTTO_TABLE ]
+[e $UE 19  ]
+"42
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 42:     }
+}
+[e :U 21 ]
+"43
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 43:     TTTO_TABLE.SUCCESS = 1;
+[e = . _TTTO_TABLE 3 -> 1 `i ]
+"44
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 44:     TTTO_TABLE.BOARD[num] = TTTO_TABLE.CURPLAYER;
+[e = *U + &U . _TTTO_TABLE 0 * -> -> _num `ui `ux -> -> # *U &U . _TTTO_TABLE 0 `ui `ux . _TTTO_TABLE 1 ]
+"45
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 45:     if(PQ[TTTO_TABLE.CURPLAYER][pt[TTTO_TABLE.CURPLAYER]] > -1)
+[e $ ! > *U + &U *U + &U _PQ * -> -> . _TTTO_TABLE 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> *U + &U _pt * -> -> . _TTTO_TABLE 1 `ui `ux -> -> # *U &U _pt `ui `ux `ui `ux -> -> # *U &U *U + &U _PQ * -> -> . _TTTO_TABLE 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux -U -> 1 `i 22  ]
+"46
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 46:         TTTO_TABLE.BOARD[PQ[TTTO_TABLE.CURPLAYER][pt[TTTO_TABLE.CURPLAYER]]] = -1;
+[e = *U + &U . _TTTO_TABLE 0 * -> -> *U + &U *U + &U _PQ * -> -> . _TTTO_TABLE 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> *U + &U _pt * -> -> . _TTTO_TABLE 1 `ui `ux -> -> # *U &U _pt `ui `ux `ui `ux -> -> # *U &U *U + &U _PQ * -> -> . _TTTO_TABLE 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux `ui `ux -> -> # *U &U . _TTTO_TABLE 0 `ui `ux -U -> 1 `i ]
+[e :U 22 ]
+"47
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 47:     PQ[TTTO_TABLE.CURPLAYER][pt[TTTO_TABLE.CURPLAYER]] = num;
+[e = *U + &U *U + &U _PQ * -> -> . _TTTO_TABLE 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> *U + &U _pt * -> -> . _TTTO_TABLE 1 `ui `ux -> -> # *U &U _pt `ui `ux `ui `ux -> -> # *U &U *U + &U _PQ * -> -> . _TTTO_TABLE 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux _num ]
+"48
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 48:     pt[TTTO_TABLE.CURPLAYER] = (pt[TTTO_TABLE.CURPLAYER]+1) % 3;
+[e = *U + &U _pt * -> -> . _TTTO_TABLE 1 `ui `ux -> -> # *U &U _pt `ui `ux % + *U + &U _pt * -> -> . _TTTO_TABLE 1 `ui `ux -> -> # *U &U _pt `ui `ux -> 1 `i -> 3 `i ]
+"49
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 49:     TTTO_TABLE.DETWINNER = detwinner(TTTO_TABLE.CURPLAYER);
+[e = . _TTTO_TABLE 2 ( _detwinner (1 . _TTTO_TABLE 1 ]
+"50
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 50:     TTTO_TABLE.CURPLAYER = (TTTO_TABLE.CURPLAYER + 1) % 2;
+[e = . _TTTO_TABLE 1 % + . _TTTO_TABLE 1 -> 1 `i -> 2 `i ]
+"51
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 51:     return TTTO_TABLE;
+[e ) _TTTO_TABLE ]
+[e $UE 19  ]
+"52
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 52: }
+[e :UE 19 ]
+}
+"54
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 54: void printBoard(TTT_OUTPUT_TABLE gameState){
+[v _printBoard `(v ~T0 @X0 1 ef1`S3 ]
+{
+[e :U _printBoard ]
+[v _gameState `S3 ~T0 @X0 1 r1 ]
+[f ]
+"55
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 55:     if(!gameState.SUCCESS){
+[e $ ! ! != . _gameState 3 -> 0 `i 24  ]
+{
+"56
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 56:         printf("illeagal move!!!\n");
+[e ( _printf :s 1C ]
+"57
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 57:         return;
+[e $UE 23  ]
+"58
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 58:     }
+}
+[e :U 24 ]
+"59
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 59:     for(int i=0;i<9;i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 9 `i 25  ]
+[e $U 26  ]
+[e :U 25 ]
+{
+"60
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 60:         (!gameState.BOARD[i])?printf("O"):(gameState.BOARD[i]==1)?printf("X"):printf("-");
+[e ? ! != *U + &U . _gameState 0 * -> -> _i `ui `ux -> -> # *U &U . _gameState 0 `ui `ux -> 0 `i : ( _printf :s 2C ? == *U + &U . _gameState 0 * -> -> _i `ui `ux -> -> # *U &U . _gameState 0 `ui `ux -> 1 `i : ( _printf :s 3C ( _printf :s 4C ]
+"61
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 61:         if(i%3==2)
+[e $ ! == % _i -> 3 `i -> 2 `i 28  ]
+"62
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 62:             printf("\n");
+[e ( _printf :s 5C ]
+[e :U 28 ]
+"63
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 63:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 9 `i 25  ]
+[e :U 26 ]
+}
+"64
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 64:     if(gameState.DETWINNER){
+[e $ ! != . _gameState 2 -> 0 `i 29  ]
+{
+"65
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 65:         (gameState.CURPLAYER)?printf("X win the game\n"):printf("O win the game\n");
+[e ? != . _gameState 1 -> 0 `i : ( _printf :s 6C ( _printf :s 7C ]
+"66
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 66:         printf("by %d,%d,%d", PQ[gameState.CURPLAYER][0], PQ[gameState.CURPLAYER][1], PQ[gameState.CURPLAYER][2]);
+[e ( _printf , , , (. :s 8C *U + &U *U + &U _PQ * -> -> . _gameState 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> . _gameState 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux *U + &U *U + &U _PQ * -> -> . _gameState 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> . _gameState 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux *U + &U *U + &U _PQ * -> -> . _gameState 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _PQ * -> -> . _gameState 1 `ui `ux -> * -> # *U &U *U &U _PQ `ui -> -> 3 `i `ui `ux `ui `ux ]
+"67
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 67:     }
+}
+[e $U 30  ]
+"68
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 68:     else
+[e :U 29 ]
+"69
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 69:         (gameState.CURPLAYER)?printf("O's turn\n"):printf("X's turn\n");
+[e ? != . _gameState 1 -> 0 `i : ( _printf :s 9C ( _printf :s 10C ]
+[e :U 30 ]
+"70
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 70:     printf("************\n");
+[e ( _printf :s 11C ]
+"71
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.c: 71: }
+[e :UE 23 ]
+}
+[p f _printf 8388736 ]
+[a 8C 98 121 32 37 100 44 37 100 44 37 100 0 ]
+[a 3C 88 0 ]
+[a 2C 79 0 ]
+[a 4C 45 0 ]
+[a 10C 88 39 115 32 116 117 114 110 10 0 ]
+[a 9C 79 39 115 32 116 117 114 110 10 0 ]
+[a 6C 88 32 119 105 110 32 116 104 101 32 103 97 109 101 10 0 ]
+[a 7C 79 32 119 105 110 32 116 104 101 32 103 97 109 101 10 0 ]
+[a 11C 42 42 42 42 42 42 42 42 42 42 42 42 10 0 ]
+[a 1C 105 108 108 101 97 103 97 108 32 109 111 118 101 33 33 33 10 0 ]
+[a 5C 10 0 ]

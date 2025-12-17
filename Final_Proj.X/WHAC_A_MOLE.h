@@ -1,0 +1,23 @@
+#ifndef W_GAME
+#define W_GAME
+
+typedef struct {
+	int SCORE_P1;
+  int SCORE_P2;
+	int WHAC_A_MOLE[9];
+	char INPUT;
+	int HIT;
+	int MISS;
+	int NOT_HIT_NOT_MISS;
+	long REMAINING_TIME; // 0.001us 
+  int WINNER;// -1 eeror ,0 draw ,1 p1 win ,2 p2win
+  unsigned long tick100us;//0.001s //-
+	int PLAYER1_STATE;//-
+	int PLAYER2_STATE;//-
+}WHAC_A_MOLE_OUTPUT_TABLE;
+
+WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE(WHAC_A_MOLE_OUTPUT_TABLE WAWO_TABLE);
+WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE_WHO_WIN(WHAC_A_MOLE_OUTPUT_TABLE WAWO_TABLE);
+
+#endif
+

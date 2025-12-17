@@ -1,0 +1,1928 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"8 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 8: typedef struct{
+[s S306 `i 1 `i 1 `i 1 `i 1 `i 1 ]
+[n S306 . PROCESS GAME_STATE P1_PRESS P2_PRESS ADC_VALUE ]
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h: 4: typedef struct {
+[s S303 `i -> 9 `i `i 1 `i 1 `i 1 `i 1 ]
+[n S303 . BOARD CURPLAYER DETWINNER SUCCESS CURSOR ]
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h: 4: typedef struct {
+[s S305 `i 1 `i 1 `i 1 `i 1 `i 1 `i 1 `ul 1 `i 1 `i 1 ]
+[n S305 . RANDOM_NUMBER DISPLAY_NUMBER_1 DISPLAY_NUMBER_2 P1_RESULT P2_RESULT WINNER tick100us PLAYER1_STATE PLAYER2_STATE ]
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h: 4: typedef struct {
+[s S304 `i 1 `i 1 `i -> 9 `i `uc 1 `i 1 `i 1 `i 1 `l 1 `i 1 `ul 1 `i 1 `i 1 ]
+[n S304 . SCORE_P1 SCORE_P2 WHAC_A_MOLE INPUT HIT MISS NOT_HIT_NOT_MISS REMAINING_TIME WINNER tick100us PLAYER1_STATE PLAYER2_STATE ]
+"22 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 22: typedef struct {
+[s S308 `i 1 `i 1 `i 1 ]
+[n S308 . WHO_WIN P1_WIN_AMOUNT P2_WIN_AMOUNT ]
+"16
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 16: typedef struct {
+[s S307 `i 1 `i 1 `i 1 ]
+[n S307 . GAME_STATE P1_PREPARE P2_PREPARE ]
+"6089 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6089:     struct {
+[s S259 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S259 . SCS IOFS OSTS IRCF IDLEN ]
+"6096
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6096:     struct {
+[s S260 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S260 . SCS0 SCS1 FLTS . IRCF0 IRCF1 IRCF2 ]
+"6088
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6088: typedef union {
+[u S258 `S259 1 `S260 1 ]
+[n S258 . . . ]
+"6106
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6106: extern volatile OSCCONbits_t OSCCONbits __attribute__((address(0xFD3)));
+[v _OSCCONbits `VS258 ~T0 @X0 0 e@4051 ]
+"1697
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1697: extern volatile unsigned char TRISB __attribute__((address(0xF93)));
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
+"1475
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1475: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"4617
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4617: extern volatile unsigned char ADCON2 __attribute__((address(0xFC0)));
+[v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
+"4688
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4688: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"4773
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4773: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
+"2598
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2598:     struct {
+[s S93 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S93 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE PSPIE ]
+"2608
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2608:     struct {
+[s S94 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S94 . . TX1IE RC1IE ]
+"2597
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2597: typedef union {
+[u S92 `S93 1 `S94 1 ]
+[n S92 . . . ]
+"2614
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2614: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
+[v _PIE1bits `VS92 ~T0 @X0 0 e@3997 ]
+"2675
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2675:     struct {
+[s S96 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S96 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF PSPIF ]
+"2685
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2685:     struct {
+[s S97 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S97 . . TX1IF RC1IF ]
+"2674
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2674: typedef union {
+[u S95 `S96 1 `S97 1 ]
+[n S95 . . . ]
+"2691
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2691: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS95 ~T0 @X0 0 e@3998 ]
+"2752
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2752:     struct {
+[s S99 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S99 . TMR1IP TMR2IP CCP1IP SSPIP TXIP RCIP ADIP PSPIP ]
+"2762
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2762:     struct {
+[s S100 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S100 . . TX1IP RC1IP ]
+"2751
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2751: typedef union {
+[u S98 `S99 1 `S100 1 ]
+[n S98 . . . ]
+"2768
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2768: extern volatile IPR1bits_t IPR1bits __attribute__((address(0xF9F)));
+[v _IPR1bits `VS98 ~T0 @X0 0 e@3999 ]
+"6696
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6696:     struct {
+[s S275 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S275 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"6706
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6706:     struct {
+[s S276 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S276 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"6716
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6716:     struct {
+[s S277 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S277 . . GIEL GIEH ]
+"6695
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6695: typedef union {
+[u S274 `S275 1 `S276 1 `S277 1 ]
+[n S274 . . . . ]
+"6722
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6722: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS274 ~T0 @X0 0 e@4082 ]
+"6534
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6534:     struct {
+[s S268 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S268 . INT1IF INT2IF . INT1IE INT2IE . INT1IP INT2IP ]
+"6544
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6544:     struct {
+[s S269 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S269 . INT1F INT2F . INT1E INT2E . INT1P INT2P ]
+"6533
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6533: typedef union {
+[u S267 `S268 1 `S269 1 ]
+[n S267 . . . ]
+"6555
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6555: extern volatile INTCON3bits_t INTCON3bits __attribute__((address(0xFF0)));
+[v _INTCON3bits `VS267 ~T0 @X0 0 e@4080 ]
+"5411
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5411: extern volatile unsigned char PR2 __attribute__((address(0xFCB)));
+[v _PR2 `Vuc ~T0 @X0 0 e@4043 ]
+"5313
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5313: extern volatile unsigned char T2CON __attribute__((address(0xFCA)));
+[v _T2CON `Vuc ~T0 @X0 0 e@4042 ]
+"5658
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5658:     struct {
+[s S238 :1 `uc 1 ]
+[n S238 . NOT_BOR ]
+"5661
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5661:     struct {
+[s S239 :1 `uc 1 :1 `uc 1 ]
+[n S239 . . NOT_POR ]
+"5665
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5665:     struct {
+[s S240 :2 `uc 1 :1 `uc 1 ]
+[n S240 . . NOT_PD ]
+"5669
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5669:     struct {
+[s S241 :3 `uc 1 :1 `uc 1 ]
+[n S241 . . NOT_TO ]
+"5673
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5673:     struct {
+[s S242 :4 `uc 1 :1 `uc 1 ]
+[n S242 . . NOT_RI ]
+"5677
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5677:     struct {
+[s S243 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S243 . nBOR nPOR nPD nTO nRI . SBOREN IPEN ]
+"5687
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5687:     struct {
+[s S244 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S244 . BOR POR PD TO RI ]
+"5657
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5657: typedef union {
+[u S237 `S238 1 `S239 1 `S240 1 `S241 1 `S242 1 `S243 1 `S244 1 ]
+[n S237 . . . . . . . . ]
+"5695
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5695: extern volatile RCONbits_t RCONbits __attribute__((address(0xFD0)));
+[v _RCONbits `VS237 ~T0 @X0 0 e@4048 ]
+"34 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 34: void HINT_OUTPUT(HINT_OUTPUT_TABLE HO_TABLE);
+[v _HINT_OUTPUT `(v ~T0 @X0 0 ef1`S307 ]
+"21 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h: 21: TTT_OUTPUT_TABLE TTT_START(TTT_OUTPUT_TABLE TTTO_TABLE);
+[v _TTT_START `(S303 ~T0 @X0 0 ef1`S303 ]
+"4779 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4779:     struct {
+[s S189 :1 `uc 1 :1 `uc 1 ]
+[n S189 . . GO_NOT_DONE ]
+"4783
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4783:     struct {
+[s S190 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S190 . ADON GO_nDONE CHS ]
+"4788
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4788:     struct {
+[s S191 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S191 . . GO CHS0 CHS1 CHS2 CHS3 ]
+"4796
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4796:     struct {
+[s S192 :1 `uc 1 :1 `uc 1 ]
+[n S192 . . DONE ]
+"4800
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4800:     struct {
+[s S193 :1 `uc 1 :1 `uc 1 ]
+[n S193 . . NOT_DONE ]
+"4804
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4804:     struct {
+[s S194 :1 `uc 1 :1 `uc 1 ]
+[n S194 . . nDONE ]
+"4808
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4808:     struct {
+[s S195 :1 `uc 1 :1 `uc 1 ]
+[n S195 . . GO_DONE ]
+"4812
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4812:     struct {
+[s S196 :1 `uc 1 :1 `uc 1 ]
+[n S196 . . GODONE ]
+"4778
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4778: typedef union {
+[u S188 `S189 1 `S190 1 `S191 1 `S192 1 `S193 1 `S194 1 `S195 1 `S196 1 ]
+[n S188 . . . . . . . . . ]
+"4817
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4817: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0xFC2)));
+[v _ADCON0bits `VS188 ~T0 @X0 0 e@4034 ]
+"35 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 35: void TTT_OUTPUT(TTT_OUTPUT_TABLE TTTO_TABLE);
+[v _TTT_OUTPUT `(v ~T0 @X0 0 ef1`S303 ]
+"16 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h: 16: REACTION_OUTPUT_TABLE REACTION_START(REACTION_OUTPUT_TABLE REACTO_TABLE);
+[v _REACTION_START `(S305 ~T0 @X0 0 ef1`S305 ]
+"5319 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5319:     struct {
+[s S217 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S217 . T2CKPS TMR2ON T2OUTPS ]
+"5324
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5324:     struct {
+[s S218 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S218 . T2CKPS0 T2CKPS1 . T2OUTPS0 T2OUTPS1 T2OUTPS2 T2OUTPS3 ]
+"5333
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5333:     struct {
+[s S219 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S219 . . TOUTPS0 TOUTPS1 TOUTPS2 TOUTPS3 ]
+"5318
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5318: typedef union {
+[u S216 `S217 1 `S218 1 `S219 1 ]
+[n S216 . . . . ]
+"5341
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5341: extern volatile T2CONbits_t T2CONbits __attribute__((address(0xFCA)));
+[v _T2CONbits `VS216 ~T0 @X0 0 e@4042 ]
+"5521
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5521: extern volatile unsigned char TMR2 __attribute__((address(0xFCC)));
+[v _TMR2 `Vuc ~T0 @X0 0 e@4044 ]
+"17 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h: 17: REACTION_OUTPUT_TABLE REACTION_UPDATE(REACTION_OUTPUT_TABLE REACTO_TABLE);
+[v _REACTION_UPDATE `(S305 ~T0 @X0 0 ef1`S305 ]
+"36 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 36: void REACTION_OUTPUT(REACTION_OUTPUT_TABLE REACTO_TABLE);
+[v _REACTION_OUTPUT `(v ~T0 @X0 0 ef1`S305 ]
+"18 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/REACTION_GAME.h: 18: REACTION_OUTPUT_TABLE REACTION_UPDATE_WHO_WIN(REACTION_OUTPUT_TABLE REACTO_TABLE);
+[v _REACTION_UPDATE_WHO_WIN `(S305 ~T0 @X0 0 ef1`S305 ]
+"19 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h: 19: WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE(WHAC_A_MOLE_OUTPUT_TABLE WAWO_TABLE);
+[v _WHAC_A_MOLE_UPDATE `(S304 ~T0 @X0 0 ef1`S304 ]
+"37 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 37: void WHAC_A_MOLE_OUTPUT(WHAC_A_MOLE_OUTPUT_TABLE WAWO_TABLE);
+[v _WHAC_A_MOLE_OUTPUT `(v ~T0 @X0 0 ef1`S304 ]
+"20 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/WHAC_A_MOLE.h: 20: WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE_WHO_WIN(WHAC_A_MOLE_OUTPUT_TABLE WAWO_TABLE);
+[v _WHAC_A_MOLE_UPDATE_WHO_WIN `(S304 ~T0 @X0 0 ef1`S304 ]
+[p mainexit ]
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/uart.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/uart.h: 4: void UART_Initialize(void);
+[v _UART_Initialize `(v ~T0 @X0 0 ef ]
+"33 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 33: void START_OUTPUT(void);
+[v _START_OUTPUT `(v ~T0 @X0 0 ef ]
+"38
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/INTERFACE.h: 38: void END_OUTPUT(END_OUTPUT_TABLE EO_TABLE);
+[v _END_OUTPUT `(v ~T0 @X0 0 ef1`S308 ]
+[t ~ __interrupt . k ]
+[t T41 __interrupt high_priority ]
+"3586 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3586: extern volatile unsigned char RCREG __attribute__((address(0xFAE)));
+[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
+"3119
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3119:     struct {
+[s S114 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S114 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"3129
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3129:     struct {
+[s S115 :3 `uc 1 :1 `uc 1 ]
+[n S115 . . ADEN ]
+"3133
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3133:     struct {
+[s S116 :5 `uc 1 :1 `uc 1 ]
+[n S116 . . SRENA ]
+"3137
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3137:     struct {
+[s S117 :6 `uc 1 :1 `uc 1 ]
+[n S117 . . RC8_9 ]
+"3141
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3141:     struct {
+[s S118 :6 `uc 1 :1 `uc 1 ]
+[n S118 . . RC9 ]
+"3145
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3145:     struct {
+[s S119 :1 `uc 1 ]
+[n S119 . RCD8 ]
+"3118
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3118: typedef union {
+[u S113 `S114 1 `S115 1 `S116 1 `S117 1 `S118 1 `S119 1 ]
+[n S113 . . . . . . . ]
+"3149
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3149: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0xFAB)));
+[v _RCSTAbits `VS113 ~T0 @X0 0 e@4011 ]
+"7467
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 7467: extern volatile __bit CREN __attribute__((address(0x7D5C)));
+[v _CREN `Vb ~T0 @X0 0 e@32092 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"22 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/TIC_TAC_TOE.h: 22: TTT_OUTPUT_TABLE TTT_UPDATE(TTT_OUTPUT_TABLE TTTO_TABLE,int P1_PRESS,int P2_PRESS,int CURSOR);
+[v _TTT_UPDATE `(S303 ~T0 @X0 0 ef4`S303`i`i`i ]
+[t T42 __interrupt low_priority ]
+"4906 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4906: extern volatile unsigned char ADRESH __attribute__((address(0xFC4)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
+"4899
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4899: extern volatile unsigned char ADRESL __attribute__((address(0xFC3)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
+"52 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 52: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"271
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 271: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"450
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 450: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"632
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 632: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"774
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 774: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"977
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 977: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"1089
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1089: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"1201
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1201: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"1313
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1313: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"1425
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1425: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"1477
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1477: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"1482
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1482: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"1699
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1699: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"1704
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1704: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"1921
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1921: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"1926
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 1926: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"2143
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2143: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"2148
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2148: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"2365
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2365: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"2370
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2370: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"2529
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2529: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"2594
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2594: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"2671
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2671: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"2748
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2748: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"2825
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2825: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"2891
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2891: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"2957
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 2957: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"3023
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3023: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"3089
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3089: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"3096
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3096: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"3103
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3103: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"3110
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3110: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"3115
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3115: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"3320
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3320: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"3325
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3325: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"3576
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3576: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"3581
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3581: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"3588
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3588: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"3593
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3593: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"3600
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3600: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"3605
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3605: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"3612
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3612: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"3619
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3619: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"3731
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3731: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"3738
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3738: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"3745
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3745: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"3752
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3752: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"3842
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3842: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"3921
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3921: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3926
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 3926: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"4083
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4083: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"4088
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4088: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"4221
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4221: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"4226
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4226: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"4401
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4401: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"4480
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4480: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"4487
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4487: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"4494
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4494: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"4501
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4501: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"4598
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4598: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"4605
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4605: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"4612
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4612: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"4619
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4619: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"4690
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4690: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"4775
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4775: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"4894
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4894: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"4901
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4901: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"4908
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4908: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"4915
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 4915: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"5010
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5010: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"5080
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5080: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"5301
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5301: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"5308
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5308: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"5315
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5315: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"5413
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5413: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"5418
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5418: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"5523
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5523: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"5530
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5530: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"5633
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5633: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"5640
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5640: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"5647
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5647: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"5654
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5654: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"5787
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5787: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"5815
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5815: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"5820
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 5820: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"6085
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6085: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"6168
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6168: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"6251
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6251: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"6258
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6258: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"6265
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6265: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"6272
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6272: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"6343
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6343: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"6350
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6350: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"6357
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6357: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"6364
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6364: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"6371
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6371: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"6378
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6378: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"6385
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6385: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"6392
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6392: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"6399
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6399: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"6406
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6406: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"6413
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6413: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"6420
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6420: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"6427
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6427: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"6434
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6434: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"6441
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6441: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"6448
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6448: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"6455
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6455: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"6462
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6462: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"6474
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6474: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"6481
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6481: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"6488
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6488: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"6495
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6495: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"6502
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6502: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"6509
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6509: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"6516
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6516: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"6523
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6523: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"6530
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6530: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"6622
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6622: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"6692
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6692: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"6809
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6809: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"6816
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6816: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"6823
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6823: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"6830
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6830: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"6839
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6839: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"6846
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6846: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"6853
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6853: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"6860
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6860: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"6869
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6869: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"6876
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6876: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"6883
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6883: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"6890
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6890: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"6897
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6897: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"6904
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6904: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"6978
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6978: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"6985
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6985: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"6992
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6992: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"6999
+[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f4520.h: 6999: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"4 ../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 4: volatile END_OUTPUT_TABLE EO_TABLE;
+[p x OSC  =  INTIO67  ]
+"5
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 5: volatile HINT_OUTPUT_TABLE HO_TABLE;
+[p x WDT  =  OFF      ]
+"6
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 6: 
+[p x PWRT  =  OFF     ]
+"7
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 7: 
+[p x BOREN  =  ON     ]
+"8
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 8: 
+[p x PBADEN  =  OFF   ]
+"9
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 9: void delay(volatile unsigned long t) {
+[p x LVP  =  OFF      ]
+"10
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 10:     while (t--);
+[p x CPD  =  OFF      ]
+"12
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 12: 
+[v _GC_TABLE `VS306 ~T0 @X0 1 e ]
+"13
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 13: void CLEAR_PRESS(volatile GAME_CONTROL_TABLE *GC){
+[v _TTTO_TABLE `VS303 ~T0 @X0 1 e ]
+"14
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 14:     GC->P1_PRESS = 0;
+[v _REACTO_TABLE `VS305 ~T0 @X0 1 e ]
+"15
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 15:     GC->P2_PRESS = 0;
+[v _WAWO_TABLE `VS304 ~T0 @X0 1 e ]
+"16
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 16: }
+[v _EO_TABLE `VS308 ~T0 @X0 1 e ]
+"17
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 17: 
+[v _HO_TABLE `VS307 ~T0 @X0 1 e ]
+"21
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 21:     GC_TABLE.PROCESS++;
+[v _delay `(v ~T0 @X0 1 ef1`Vul ]
+{
+[e :U _delay ]
+[v _t `Vul ~T0 @X0 1 r1 ]
+[f ]
+"22
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 22:     GC_TABLE.GAME_STATE++;
+[e $U 310  ]
+[e :U 311 ]
+[e :U 310 ]
+[e $ != -- _t -> -> 1 `i `Vul -> -> -> 0 `i `l `ul 311  ]
+[e :U 312 ]
+"23
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 23:     CLEAR_PRESS(&GC_TABLE);
+[e :UE 309 ]
+}
+"25
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 25: 
+[v _CLEAR_PRESS `(v ~T0 @X0 1 ef1`*VS306 ]
+{
+[e :U _CLEAR_PRESS ]
+[v _GC `*VS306 ~T0 @X0 1 r1 ]
+[f ]
+"26
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 26: void CONFIG_INITIALIZE(void){
+[e = . *U _GC 2 -> 0 `i ]
+"27
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 27: 
+[e = . *U _GC 3 -> 0 `i ]
+"28
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 28:     OSCCONbits.IRCF = 0b111;
+[e :UE 313 ]
+}
+"30
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 30: 
+[v _GameSwiching `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _GameSwiching ]
+[v _a `i ~T0 @X0 1 r1 ]
+[f ]
+"31
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 31:     TRISB = 0b00000011;
+[e =+ . _EO_TABLE 1 -> -> == _a -> 1 `i `i `Vi ]
+"32
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 32:     TRISA = 1;
+[e =+ . _EO_TABLE 2 -> -> == _a -> 2 `i `i `Vi ]
+"33
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 33: 
+[e ++ . _GC_TABLE 0 -> -> 1 `i `Vi ]
+"34
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 34: 
+[e ++ . _GC_TABLE 1 -> -> 1 `i `Vi ]
+"35
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 35:     ADCON2 = 0b00001000;
+[e ( _CLEAR_PRESS (1 &U _GC_TABLE ]
+"36
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 36:     ADCON1 = 0b00001110;
+[e :UE 314 ]
+}
+"38
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 38: 
+[v _CONFIG_INITIALIZE `(v ~T0 @X0 1 ef ]
+{
+[e :U _CONFIG_INITIALIZE ]
+[f ]
+"40
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 40:     PIR1bits.ADIF = 0;
+[e = . . _OSCCONbits 0 3 -> -> 7 `i `uc ]
+"43
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 43: 
+[e = _TRISB -> -> 3 `i `uc ]
+"44
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 44:     INTCONbits.INT0IF = 0;
+[e = _TRISA -> -> 1 `i `uc ]
+"47
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 47:     INTCON3bits.INT1IE = 1;
+[e = _ADCON2 -> -> 8 `i `uc ]
+"48
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 48:     INTCON3bits.INT1IP = 1;
+[e = _ADCON1 -> -> 14 `i `uc ]
+"49
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 49: 
+[e = _ADCON0 -> -> 1 `i `uc ]
+"51
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 51:     PIR1bits.TMR2IF = 0;
+[e = . . _PIE1bits 0 6 -> -> 0 `i `uc ]
+"52
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 52:     PIE1bits.TMR2IE = 1;
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"53
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 53:     IPR1bits.TMR2IP = 0;
+[e = . . _IPR1bits 0 6 -> -> 0 `i `uc ]
+"56
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 56: 
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"57
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 57: 
+[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
+"58
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 58: 
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"59
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 59:     RCONbits.IPEN = 1;
+[e = . . _INTCON3bits 0 3 -> -> 1 `i `uc ]
+"60
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 60:     INTCONbits.GIEH = 1;
+[e = . . _INTCON3bits 0 6 -> -> 1 `i `uc ]
+"63
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 63: 
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"64
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 64: void GC_TABLE_INITIALIZE(void){
+[e = . . _PIE1bits 0 1 -> -> 1 `i `uc ]
+"65
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 65:     GC_TABLE.ADC_VALUE = 0;
+[e = . . _IPR1bits 0 1 -> -> 0 `i `uc ]
+"66
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 66:     GC_TABLE.GAME_STATE = 0;
+[e = _PR2 -> -> 1 `i `uc ]
+"67
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 67:     GC_TABLE.P1_PRESS = 0;
+[e = _T2CON -> -> 123 `i `uc ]
+"71
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 71: 
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+"72
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 72: void EO_TABLE_INITIALIZE(void){
+[e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
+"73
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 73:     EO_TABLE.P1_WIN_AMOUNT = 0;
+[e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
+"74
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 74:     EO_TABLE.P2_WIN_AMOUNT = 0;
+[e :UE 315 ]
+}
+"76
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 76: }
+[v _GC_TABLE_INITIALIZE `(v ~T0 @X0 1 ef ]
+{
+[e :U _GC_TABLE_INITIALIZE ]
+[f ]
+"77
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 77: 
+[e = . _GC_TABLE 4 -> 0 `i ]
+"78
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 78: void REACTION_OUTPUT_TABLE_INITIALIZE(void){
+[e = . _GC_TABLE 1 -> 0 `i ]
+"79
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 79:     REACTO_TABLE.PLAYER1_STATE = 0;
+[e = . _GC_TABLE 2 -> 0 `i ]
+"80
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 80:     REACTO_TABLE.PLAYER2_STATE = 0;
+[e = . _GC_TABLE 3 -> 0 `i ]
+"81
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 81:     REACTO_TABLE.tick100us = 0;
+[e = . _GC_TABLE 0 -U -> 1 `i ]
+"82
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 82:     REACTO_TABLE.WINNER = -1;
+[e :UE 316 ]
+}
+"84
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 84: void WHAC_A_MOLE_OUTPUT_TABLE_INITIALIZE(void){
+[v _EO_TABLE_INITIALIZE `(v ~T0 @X0 1 ef ]
+{
+[e :U _EO_TABLE_INITIALIZE ]
+[f ]
+"85
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 85:  WAWO_TABLE.SCORE_P1 = 0;
+[e = . _EO_TABLE 1 -> 0 `i ]
+"86
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 86:     WAWO_TABLE.SCORE_P2 = 0;
+[e = . _EO_TABLE 2 -> 0 `i ]
+"87
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 87:  WAWO_TABLE.INPUT = 'N';
+[e = . _EO_TABLE 0 -U -> 1 `i ]
+"88
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 88:  WAWO_TABLE.HIT = 0;
+[e :UE 317 ]
+}
+"90
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 90:  WAWO_TABLE.NOT_HIT_NOT_MISS = 0;
+[v _REACTION_OUTPUT_TABLE_INITIALIZE `(v ~T0 @X0 1 ef ]
+{
+[e :U _REACTION_OUTPUT_TABLE_INITIALIZE ]
+[f ]
+"91
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 91:  WAWO_TABLE.REMAINING_TIME = 0;
+[e = . _REACTO_TABLE 7 -> 0 `i ]
+"92
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 92:     WAWO_TABLE.WINNER = -1;
+[e = . _REACTO_TABLE 8 -> 0 `i ]
+"93
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 93:     WAWO_TABLE.tick100us= 0 ;
+[e = . _REACTO_TABLE 6 -> -> -> 0 `i `l `ul ]
+"94
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 94:  WAWO_TABLE.PLAYER1_STATE = 0;
+[e = . _REACTO_TABLE 5 -U -> 1 `i ]
+"95
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 95:  WAWO_TABLE.PLAYER2_STATE= 0;
+[e :UE 318 ]
+}
+"96
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 96: }
+[v _WHAC_A_MOLE_OUTPUT_TABLE_INITIALIZE `(v ~T0 @X0 1 ef ]
+{
+[e :U _WHAC_A_MOLE_OUTPUT_TABLE_INITIALIZE ]
+[f ]
+"97
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 97: 
+[e = . _WAWO_TABLE 0 -> 0 `i ]
+"98
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 98: HINT_OUTPUT_TABLE WRITE_HO_TABLE(void){
+[e = . _WAWO_TABLE 1 -> 0 `i ]
+"99
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 99:     HINT_OUTPUT_TABLE HO_TABLE_R;
+[e = . _WAWO_TABLE 3 -> -> 78 `ui `uc ]
+"100
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 100:     HO_TABLE_R.GAME_STATE = GC_TABLE.GAME_STATE;
+[e = . _WAWO_TABLE 4 -> 0 `i ]
+"101
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 101:     HO_TABLE_R.P1_PREPARE = GC_TABLE.P1_PRESS;
+[e = . _WAWO_TABLE 5 -> 0 `i ]
+"102
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 102:     HO_TABLE_R.P2_PREPARE = GC_TABLE.P2_PRESS;
+[e = . _WAWO_TABLE 6 -> 0 `i ]
+"103
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 103:     return HO_TABLE_R;
+[e = . _WAWO_TABLE 7 -> -> 0 `i `l ]
+"104
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 104: }
+[e = . _WAWO_TABLE 8 -U -> 1 `i ]
+"105
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 105: 
+[e = . _WAWO_TABLE 9 -> -> -> 0 `i `l `ul ]
+"106
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 106: 
+[e = . _WAWO_TABLE 10 -> 0 `i ]
+"107
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 107: 
+[e = . _WAWO_TABLE 11 -> 0 `i ]
+"108
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 108: void PROCESS_HINT(void){
+[e :UE 319 ]
+}
+"110
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 110:         HO_TABLE = WRITE_HO_TABLE();
+[v _WRITE_HO_TABLE `(S307 ~T0 @X0 1 ef ]
+{
+[e :U _WRITE_HO_TABLE ]
+[f ]
+"111
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 111:         HINT_OUTPUT(HO_TABLE);
+[v _HO_TABLE_R `S307 ~T0 @X0 1 a ]
+"112
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 112:     }
+[e = . _HO_TABLE_R 0 . _GC_TABLE 1 ]
+"113
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 113: 
+[e = . _HO_TABLE_R 1 . _GC_TABLE 2 ]
+"114
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 114:     HO_TABLE = WRITE_HO_TABLE();
+[e = . _HO_TABLE_R 2 . _GC_TABLE 3 ]
+"115
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 115:     HINT_OUTPUT(HO_TABLE);
+[e ) _HO_TABLE_R ]
+[e $UE 320  ]
+"116
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 116:      delay(160000);
+[e :UE 320 ]
+}
+"120
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 120: void PROCESS_ONE(void){
+[v _PROCESS_HINT `(v ~T0 @X0 1 ef ]
+{
+[e :U _PROCESS_HINT ]
+[f ]
+"121
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 121:     TTTO_TABLE = TTT_START(TTTO_TABLE);
+[e $U 322  ]
+[e :U 323 ]
+{
+"122
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 122:     while(TTTO_TABLE.DETWINNER == 0){
+[e = _HO_TABLE ( _WRITE_HO_TABLE ..  ]
+"123
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 123:         if(!ADCON0bits.GO){
+[e ( _HINT_OUTPUT (1 _HO_TABLE ]
+"124
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 124:             ADCON0bits.GO = 1;
+}
+[e :U 322 ]
+"121
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 121:     TTTO_TABLE = TTT_START(TTTO_TABLE);
+[e $ || != . _GC_TABLE 2 -> 1 `i != . _GC_TABLE 3 -> 1 `i 323  ]
+[e :U 324 ]
+"126
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 126:         TTT_OUTPUT(TTTO_TABLE);
+[e = _HO_TABLE ( _WRITE_HO_TABLE ..  ]
+"127
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 127:     }
+[e ( _HINT_OUTPUT (1 _HO_TABLE ]
+"128
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 128: 
+[e ( _delay (1 -> -> 160000 `l `ul ]
+"129
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 129:     if(TTTO_TABLE.DETWINNER == 1){
+[e $UE 321  ]
+"130
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 130:         PIE1bits.ADIE = 0;
+[e :UE 321 ]
+}
+"132
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 132:     }
+[v _PROCESS_ONE `(v ~T0 @X0 1 ef ]
+{
+[e :U _PROCESS_ONE ]
+[f ]
+"133
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 133:       delay(160000);
+[e = _TTTO_TABLE ( _TTT_START (1 _TTTO_TABLE ]
+"134
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 134:     return;
+[e $U 326  ]
+[e :U 327 ]
+{
+"135
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 135: }
+[e $ ! ! != -> . . _ADCON0bits 2 1 `i -> 0 `i 329  ]
+{
+"136
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 136: 
+[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+"137
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 137: void PROCESS_THREE(void){
+}
+[e :U 329 ]
+"138
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 138:     REACTION_OUTPUT_TABLE_INITIALIZE();
+[e ( _TTT_OUTPUT (1 _TTTO_TABLE ]
+"139
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 139:     REACTO_TABLE = REACTION_START(REACTO_TABLE);
+}
+[e :U 326 ]
+"134
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 134:     return;
+[e $ == . _TTTO_TABLE 2 -> 0 `i 327  ]
+[e :U 328 ]
+"141
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 141:     while(REACTO_TABLE.PLAYER1_STATE != 2 || REACTO_TABLE.PLAYER2_STATE !=2){
+[e $ ! == . _TTTO_TABLE 2 -> 1 `i 330  ]
+{
+"142
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 142:         if((REACTO_TABLE.PLAYER1_STATE == 0 && REACTO_TABLE.PLAYER2_STATE == 0) || (REACTO_TABLE.PLAYER1_STATE == 2 && REACTO_TABLE.PLAYER2_STATE == 0)){
+[e = . . _PIE1bits 0 6 -> -> 0 `i `uc ]
+"143
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 143:             REACTO_TABLE.tick100us = 0;
+[e ( _TTT_OUTPUT (1 _TTTO_TABLE ]
+"144
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 144:             TMR2 = 0;
+}
+[e :U 330 ]
+"145
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 145:         }
+[e ( _delay (1 -> -> 160000 `l `ul ]
+"146
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 146:         REACTO_TABLE = REACTION_UPDATE(REACTO_TABLE);
+[e $UE 325  ]
+"147
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 147:         REACTION_OUTPUT(REACTO_TABLE);
+[e :UE 325 ]
+}
+"149
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 149:     T2CONbits.TMR2ON = 0;
+[v _PROCESS_THREE `(v ~T0 @X0 1 ef ]
+{
+[e :U _PROCESS_THREE ]
+[f ]
+"150
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 150:     REACTO_TABLE = REACTION_UPDATE(REACTO_TABLE);
+[e ( _REACTION_OUTPUT_TABLE_INITIALIZE ..  ]
+"151
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 151:     REACTION_OUTPUT(REACTO_TABLE);
+[e = _REACTO_TABLE ( _REACTION_START (1 _REACTO_TABLE ]
+"152
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 152:       delay(160000);
+[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
+"153
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 153:     REACTO_TABLE = REACTION_UPDATE_WHO_WIN(REACTO_TABLE);
+[e $U 332  ]
+[e :U 333 ]
+{
+"154
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 154:     REACTION_OUTPUT(REACTO_TABLE);
+[e $ ! || && == . _REACTO_TABLE 7 -> 0 `i == . _REACTO_TABLE 8 -> 0 `i && == . _REACTO_TABLE 7 -> 2 `i == . _REACTO_TABLE 8 -> 0 `i 335  ]
+{
+"155
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 155:        delay(160000);
+[e = . _REACTO_TABLE 6 -> -> -> 0 `i `l `ul ]
+"156
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 156:     return;
+[e = _TMR2 -> -> 0 `i `uc ]
+"157
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 157: }
+}
+[e :U 335 ]
+"158
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 158: 
+[e = _REACTO_TABLE ( _REACTION_UPDATE (1 _REACTO_TABLE ]
+"159
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 159: void PROCESS_FIVE(void){
+[e ( _REACTION_OUTPUT (1 _REACTO_TABLE ]
+"160
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 160:     WHAC_A_MOLE_OUTPUT_TABLE_INITIALIZE();
+}
+[e :U 332 ]
+"153
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 153:     REACTO_TABLE = REACTION_UPDATE_WHO_WIN(REACTO_TABLE);
+[e $ || != . _REACTO_TABLE 7 -> 2 `i != . _REACTO_TABLE 8 -> 2 `i 333  ]
+[e :U 334 ]
+"161
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 161:     T2CONbits.TMR2ON = 1;
+[e = . . _T2CONbits 0 1 -> -> 0 `i `uc ]
+"162
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 162:     while(WAWO_TABLE.PLAYER1_STATE!=2 || WAWO_TABLE.PLAYER2_STATE != 2){
+[e = _REACTO_TABLE ( _REACTION_UPDATE (1 _REACTO_TABLE ]
+"163
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 163:         if((WAWO_TABLE.PLAYER1_STATE == 0 && WAWO_TABLE.PLAYER2_STATE == 0) || (WAWO_TABLE.PLAYER1_STATE == 2 && WAWO_TABLE.PLAYER2_STATE == 0)){
+[e ( _REACTION_OUTPUT (1 _REACTO_TABLE ]
+"164
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 164:             WAWO_TABLE.tick100us = 0;
+[e ( _delay (1 -> -> 160000 `l `ul ]
+"165
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 165:             TMR2 =0;
+[e = _REACTO_TABLE ( _REACTION_UPDATE_WHO_WIN (1 _REACTO_TABLE ]
+"166
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 166:         }
+[e ( _REACTION_OUTPUT (1 _REACTO_TABLE ]
+"167
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 167:         WAWO_TABLE = WHAC_A_MOLE_UPDATE(WAWO_TABLE);
+[e ( _delay (1 -> -> 160000 `l `ul ]
+"168
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 168:         if(WAWO_TABLE.REMAINING_TIME<=0){
+[e $UE 331  ]
+"169
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 169:             if(WAWO_TABLE.PLAYER1_STATE == 1 && WAWO_TABLE.PLAYER2_STATE == 0){
+[e :UE 331 ]
+}
+"171
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 171:             }
+[v _PROCESS_FIVE `(v ~T0 @X0 1 ef ]
+{
+[e :U _PROCESS_FIVE ]
+[f ]
+"172
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 172:             else if(WAWO_TABLE.PLAYER1_STATE == 2 && WAWO_TABLE.PLAYER2_STATE == 1){
+[e ( _WHAC_A_MOLE_OUTPUT_TABLE_INITIALIZE ..  ]
+"173
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 173:                 WAWO_TABLE.PLAYER2_STATE = 2;
+[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
+"174
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 174:             }
+[e $U 337  ]
+[e :U 338 ]
+{
+"175
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 175:         }
+[e $ ! || && == . _WAWO_TABLE 10 -> 0 `i == . _WAWO_TABLE 11 -> 0 `i && == . _WAWO_TABLE 10 -> 2 `i == . _WAWO_TABLE 11 -> 0 `i 340  ]
+{
+"176
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 176:         WHAC_A_MOLE_OUTPUT(WAWO_TABLE);
+[e = . _WAWO_TABLE 9 -> -> -> 0 `i `l `ul ]
+"177
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 177:     }
+[e = _TMR2 -> -> 0 `i `uc ]
+"178
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 178:     T2CONbits.TMR2ON = 0;
+}
+[e :U 340 ]
+"179
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 179:     WAWO_TABLE = WHAC_A_MOLE_UPDATE(WAWO_TABLE);
+[e = _WAWO_TABLE ( _WHAC_A_MOLE_UPDATE (1 _WAWO_TABLE ]
+"180
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 180:     WHAC_A_MOLE_OUTPUT(WAWO_TABLE);
+[e $ ! <= . _WAWO_TABLE 7 -> -> 0 `i `l 341  ]
+{
+"181
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 181:      delay(160000);
+[e $ ! && == . _WAWO_TABLE 10 -> 1 `i == . _WAWO_TABLE 11 -> 0 `i 342  ]
+{
+"182
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 182:     WAWO_TABLE = WHAC_A_MOLE_UPDATE_WHO_WIN(WAWO_TABLE);
+[e = . _WAWO_TABLE 10 -> 2 `i ]
+"183
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 183:     WHAC_A_MOLE_OUTPUT(WAWO_TABLE);
+}
+[e $U 343  ]
+"184
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 184:      delay(160000);
+[e :U 342 ]
+[e $ ! && == . _WAWO_TABLE 10 -> 2 `i == . _WAWO_TABLE 11 -> 1 `i 344  ]
+{
+"185
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 185:     return;
+[e = . _WAWO_TABLE 11 -> 2 `i ]
+"186
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 186: }
+}
+[e :U 344 ]
+[e :U 343 ]
+"187
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 187: 
+}
+[e :U 341 ]
+"188
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 188: void main(void){
+[e ( _WHAC_A_MOLE_OUTPUT (1 _WAWO_TABLE ]
+"189
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 189:     GC_TABLE_INITIALIZE();
+}
+[e :U 337 ]
+"174
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 174:             }
+[e $ || != . _WAWO_TABLE 10 -> 2 `i != . _WAWO_TABLE 11 -> 2 `i 338  ]
+[e :U 339 ]
+"190
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 190:     EO_TABLE_INITIALIZE();
+[e = . . _T2CONbits 0 1 -> -> 0 `i `uc ]
+"191
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 191:     UART_Initialize();
+[e = _WAWO_TABLE ( _WHAC_A_MOLE_UPDATE (1 _WAWO_TABLE ]
+"192
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 192:     CONFIG_INITIALIZE();
+[e ( _WHAC_A_MOLE_OUTPUT (1 _WAWO_TABLE ]
+"193
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 193:     START_OUTPUT();
+[e ( _delay (1 -> -> 160000 `l `ul ]
+"194
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 194: 
+[e = _WAWO_TABLE ( _WHAC_A_MOLE_UPDATE_WHO_WIN (1 _WAWO_TABLE ]
+"195
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 195:     while(GC_TABLE.PROCESS != 0);
+[e ( _WHAC_A_MOLE_OUTPUT (1 _WAWO_TABLE ]
+"196
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 196: 
+[e ( _delay (1 -> -> 160000 `l `ul ]
+"197
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 197: 
+[e $UE 336  ]
+"198
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 198:     if(GC_TABLE.PROCESS == 0 && GC_TABLE.GAME_STATE == 1){
+[e :UE 336 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"200
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 200:     }
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"201
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 201: 
+[e ( _GC_TABLE_INITIALIZE ..  ]
+"202
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 202:     GC_TABLE.PROCESS++;
+[e ( _EO_TABLE_INITIALIZE ..  ]
+"203
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 203:     CLEAR_PRESS(&GC_TABLE);
+[e ( _UART_Initialize ..  ]
+"204
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 204: 
+[e ( _CONFIG_INITIALIZE ..  ]
+"205
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 205: 
+[e ( _START_OUTPUT ..  ]
+"207
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 207:         PIE1bits.ADIE = 1;
+[e $U 346  ]
+[e :U 347 ]
+[e :U 346 ]
+[e $ != . _GC_TABLE 0 -> 0 `i 347  ]
+[e :U 348 ]
+"210
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 210: 
+[e $ ! && == . _GC_TABLE 0 -> 0 `i == . _GC_TABLE 1 -> 1 `i 349  ]
+{
+"211
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 211:     GameSwiching(1+!TTTO_TABLE.CURPLAYER);
+[e ( _PROCESS_HINT ..  ]
+"212
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 212: 
+}
+[e :U 349 ]
+"214
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 214:         PROCESS_HINT();
+[e ++ . _GC_TABLE 0 -> -> 1 `i `Vi ]
+"215
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 215:     }
+[e ( _CLEAR_PRESS (1 &U _GC_TABLE ]
+"218
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 218:     CLEAR_PRESS(&GC_TABLE);
+[e $ ! && == . _GC_TABLE 0 -> 1 `i == . _GC_TABLE 1 -> 1 `i 350  ]
+{
+"219
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 219: 
+[e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
+"220
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 220:     if(GC_TABLE.PROCESS == 3 && GC_TABLE.GAME_STATE == 2){
+[e ( _PROCESS_ONE ..  ]
+"221
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 221:         PROCESS_THREE();
+}
+[e :U 350 ]
+"223
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 223: 
+[e ( _GameSwiching (1 + -> 1 `i -> ! != . _TTTO_TABLE 1 -> 0 `i `i ]
+"225
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 225: 
+[e $ ! && == . _GC_TABLE 0 -> 2 `i == . _GC_TABLE 1 -> 2 `i 351  ]
+{
+"226
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 226:     if(GC_TABLE.PROCESS == 4 && GC_TABLE.GAME_STATE == 3){
+[e ( _PROCESS_HINT ..  ]
+"227
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 227:         PROCESS_HINT();
+}
+[e :U 351 ]
+"229
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 229: 
+[e ++ . _GC_TABLE 0 -> -> 1 `i `Vi ]
+"230
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 230:     GC_TABLE.PROCESS++;
+[e ( _CLEAR_PRESS (1 &U _GC_TABLE ]
+"232
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 232: 
+[e $ ! && == . _GC_TABLE 0 -> 3 `i == . _GC_TABLE 1 -> 2 `i 352  ]
+{
+"233
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 233:     if(GC_TABLE.PROCESS == 5 && GC_TABLE.GAME_STATE == 3){
+[e ( _PROCESS_THREE ..  ]
+"234
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 234:         PROCESS_FIVE();
+}
+[e :U 352 ]
+"236
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 236:     GameSwiching(WAWO_TABLE.WINNER);
+[e ( _GameSwiching (1 . _REACTO_TABLE 5 ]
+"238
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 238:     EO_TABLE.WHO_WIN = (EO_TABLE.P1_WIN_AMOUNT < EO_TABLE.P2_WIN_AMOUNT)*2 + (EO_TABLE.P1_WIN_AMOUNT > EO_TABLE.P2_WIN_AMOUNT);
+[e $ ! && == . _GC_TABLE 0 -> 4 `i == . _GC_TABLE 1 -> 3 `i 353  ]
+{
+"239
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 239:     INTCONbits.INT0IE = 0;
+[e ( _PROCESS_HINT ..  ]
+"240
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 240:     INTCON3bits.INT1IE = 0;
+}
+[e :U 353 ]
+"242
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 242:         END_OUTPUT(EO_TABLE);
+[e ++ . _GC_TABLE 0 -> -> 1 `i `Vi ]
+"243
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 243: }
+[e ( _CLEAR_PRESS (1 &U _GC_TABLE ]
+"245
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 245: void __attribute__((picinterrupt(("high_priority")))) Hi_ISR(void)
+[e $ ! && == . _GC_TABLE 0 -> 5 `i == . _GC_TABLE 1 -> 3 `i 354  ]
+{
+"246
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 246: {
+[e ( _PROCESS_FIVE ..  ]
+"247
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 247:     if(PIR1bits.RCIF)
+}
+[e :U 354 ]
+"248
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 248:     {
+[e ( _GameSwiching (1 . _WAWO_TABLE 8 ]
+"250
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 250:        if(RCSTAbits.OERR)
+[e = . _EO_TABLE 0 + * -> < . _EO_TABLE 1 . _EO_TABLE 2 `i -> 2 `i -> > . _EO_TABLE 1 . _EO_TABLE 2 `i ]
+"251
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 251:         {
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+"252
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 252:             CREN = 0;
+[e = . . _INTCON3bits 0 3 -> -> 0 `i `uc ]
+"253
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 253:             __nop();
+[e :U 356 ]
+"254
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 254:             CREN = 1;
+[e ( _END_OUTPUT (1 _EO_TABLE ]
+[e :U 355 ]
+[e $U 356  ]
+[e :U 357 ]
+"255
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 255:             PIR1bits.RCIF = 0;
+[e :UE 345 ]
+}
+[v $root$_Hi_ISR `(v ~T0 @X0 0 e ]
+"257
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 257:         }
+[v _Hi_ISR `(v ~T41 @X0 1 ef ]
+"258
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 258: 
+{
+[e :U _Hi_ISR ]
+[f ]
+"259
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 259: 
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 359  ]
+"260
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 260:         if(GC_TABLE.PROCESS == 5){
+{
+"261
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 261:             if(RCREG < '1' || RCREG > '9' ){
+[e = . _WAWO_TABLE 3 -> _RCREG `uc ]
+"262
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 262:                 WAWO_TABLE.INPUT = 'N';
+[e $ ! != -> . . _RCSTAbits 0 1 `i -> 0 `i 360  ]
+"263
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 263:             }
+{
+"264
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 264:             else{
+[e = _CREN -> -> 0 `i `b ]
+"265
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 265:                 WAWO_TABLE.INPUT = RCREG;
+[e ( ___nop ..  ]
+"266
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 266:                 WAWO_TABLE = WHAC_A_MOLE_UPDATE(WAWO_TABLE);
+[e = _CREN -> -> 1 `i `b ]
+"267
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 267:                 WAWO_TABLE.INPUT = RCREG;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"268
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 268:                 WHAC_A_MOLE_OUTPUT(WAWO_TABLE);
+[e $UE 358  ]
+"269
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 269:                 WAWO_TABLE.INPUT = 'N';
+}
+[e :U 360 ]
+"272
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 272: 
+[e $ ! == . _GC_TABLE 0 -> 5 `i 361  ]
+{
+"273
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 273:         }
+[e $ ! || < -> _RCREG `ui -> 49 `ui > -> _RCREG `ui -> 57 `ui 362  ]
+{
+"274
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 274:         PIR1bits.RCIF = 0;
+[e = . _WAWO_TABLE 3 -> -> 78 `ui `uc ]
+"275
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 275:         return;
+}
+[e $U 363  ]
+"276
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 276:     }
+[e :U 362 ]
+{
+"277
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 277:     if(INTCONbits.INT0IF == 1){
+[e = . _WAWO_TABLE 3 -> _RCREG `uc ]
+"278
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 278:         if(GC_TABLE.PROCESS == -1){
+[e = _WAWO_TABLE ( _WHAC_A_MOLE_UPDATE (1 _WAWO_TABLE ]
+"279
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 279:             delay(60000);
+[e = . _WAWO_TABLE 3 -> _RCREG `uc ]
+"280
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 280:             GC_TABLE.GAME_STATE++;
+[e ( _WHAC_A_MOLE_OUTPUT (1 _WAWO_TABLE ]
+"281
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 281:             GC_TABLE.PROCESS++;
+[e = . _WAWO_TABLE 3 -> -> 78 `ui `uc ]
+"283
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 283:             return;
+}
+[e :U 363 ]
+"285
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 285: 
+}
+[e :U 361 ]
+"286
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 286:         if(GC_TABLE.PROCESS == 0 || GC_TABLE.PROCESS == 2 || GC_TABLE.PROCESS == 4){
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"287
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 287:             delay(60000);
+[e $UE 358  ]
+"288
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 288:             GC_TABLE.P1_PRESS = 1;
+}
+[e :U 359 ]
+"289
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 289:             INTCONbits.INT0IF = 0;
+[e $ ! == -> . . _INTCONbits 0 1 `i -> 1 `i 364  ]
+{
+"290
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 290:             return;
+[e $ ! == . _GC_TABLE 0 -U -> 1 `i 365  ]
+{
+"291
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 291:         }
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"292
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 292: 
+[e ++ . _GC_TABLE 1 -> -> 1 `i `Vi ]
+"293
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 293:         if(GC_TABLE.PROCESS == 1){
+[e ++ . _GC_TABLE 0 -> -> 1 `i `Vi ]
+"294
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 294:             delay(60000);
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"295
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 295:             TTTO_TABLE = TTT_UPDATE(TTTO_TABLE,1,0,TTTO_TABLE.CURSOR);
+[e $UE 358  ]
+"296
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 296:             INTCONbits.INT0IF = 0;
+}
+[e :U 365 ]
+"298
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 298:         }
+[e $ ! || || == . _GC_TABLE 0 -> 0 `i == . _GC_TABLE 0 -> 2 `i == . _GC_TABLE 0 -> 4 `i 366  ]
+{
+"299
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 299: 
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"300
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 300:         if(GC_TABLE.PROCESS == 3){
+[e = . _GC_TABLE 2 -> 1 `i ]
+"301
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 301:             if(REACTO_TABLE.PLAYER1_STATE == 0 && REACTO_TABLE.PLAYER2_STATE == 0){
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"302
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 302:                 delay(60000);
+[e $UE 358  ]
+"303
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 303:                 REACTO_TABLE.PLAYER1_STATE = 1 ;
+}
+[e :U 366 ]
+"305
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 305:             else if(REACTO_TABLE.PLAYER1_STATE == 1 && REACTO_TABLE.PLAYER2_STATE == 0){
+[e $ ! == . _GC_TABLE 0 -> 1 `i 367  ]
+{
+"306
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 306:                 delay(60000);
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"307
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 307:                 REACTO_TABLE.PLAYER1_STATE = 2 ;
+[e = _TTTO_TABLE ( _TTT_UPDATE (4 , , , _TTTO_TABLE -> 1 `i -> 0 `i . _TTTO_TABLE 4 ]
+"308
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 308:             }
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"309
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 309: 
+[e $UE 358  ]
+"310
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 310:             INTCONbits.INT0IF = 0;
+}
+[e :U 367 ]
+"312
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 312:         }
+[e $ ! == . _GC_TABLE 0 -> 3 `i 368  ]
+{
+"313
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 313: 
+[e $ ! && == . _REACTO_TABLE 7 -> 0 `i == . _REACTO_TABLE 8 -> 0 `i 369  ]
+{
+"314
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 314:         if(GC_TABLE.PROCESS == 5){
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"315
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 315:             if(WAWO_TABLE.PLAYER1_STATE == 0 && WAWO_TABLE.PLAYER2_STATE == 0){
+[e = . _REACTO_TABLE 7 -> 1 `i ]
+"316
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 316:                 delay(60000);
+}
+[e $U 370  ]
+"317
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 317:                 WAWO_TABLE.PLAYER1_STATE = 1 ;
+[e :U 369 ]
+[e $ ! && == . _REACTO_TABLE 7 -> 1 `i == . _REACTO_TABLE 8 -> 0 `i 371  ]
+{
+"318
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 318:             }
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"319
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 319:             INTCONbits.INT0IF = 0;
+[e = . _REACTO_TABLE 7 -> 2 `i ]
+"320
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 320:             return;
+}
+[e :U 371 ]
+[e :U 370 ]
+"322
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 322: 
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"323
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 323:         INTCONbits.INT0IF = 0;
+[e $UE 358  ]
+"324
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 324:         return;
+}
+[e :U 368 ]
+"326
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 326: 
+[e $ ! == . _GC_TABLE 0 -> 5 `i 372  ]
+{
+"327
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 327:     if(INTCON3bits.INT1IF ==1){
+[e $ ! && == . _WAWO_TABLE 10 -> 0 `i == . _WAWO_TABLE 11 -> 0 `i 373  ]
+{
+"328
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 328:         if(GC_TABLE.PROCESS == -1){
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"329
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 329:             INTCON3bits.INT1IF = 0;
+[e = . _WAWO_TABLE 10 -> 1 `i ]
+"330
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 330:             return;
+}
+[e :U 373 ]
+"331
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 331:         }
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"332
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 332: 
+[e $UE 358  ]
+"333
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 333:         if(GC_TABLE.PROCESS == 0 || GC_TABLE.PROCESS == 2 || GC_TABLE.PROCESS == 4){
+}
+[e :U 372 ]
+"335
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 335:             GC_TABLE.P2_PRESS = 1;
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"336
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 336:             INTCON3bits.INT1IF = 0;
+[e $UE 358  ]
+"337
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 337:             return;
+}
+[e :U 364 ]
+"339
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 339: 
+[e $ ! == -> . . _INTCON3bits 0 0 `i -> 1 `i 374  ]
+{
+"340
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 340:         if(GC_TABLE.PROCESS == 1){
+[e $ ! == . _GC_TABLE 0 -U -> 1 `i 375  ]
+{
+"341
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 341:             delay(60000);
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"342
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 342:             TTTO_TABLE = TTT_UPDATE(TTTO_TABLE,0,1,TTTO_TABLE.CURSOR);
+[e $UE 358  ]
+"343
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 343:             INTCON3bits.INT1IF = 0;
+}
+[e :U 375 ]
+"345
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 345:         }
+[e $ ! || || == . _GC_TABLE 0 -> 0 `i == . _GC_TABLE 0 -> 2 `i == . _GC_TABLE 0 -> 4 `i 376  ]
+{
+"346
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 346: 
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"347
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 347:          if(GC_TABLE.PROCESS == 3 ){
+[e = . _GC_TABLE 3 -> 1 `i ]
+"348
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 348:             if(REACTO_TABLE.PLAYER1_STATE == 2 && REACTO_TABLE.PLAYER2_STATE == 0){
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"349
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 349:                 delay(60000);
+[e $UE 358  ]
+"350
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 350:                 REACTO_TABLE.PLAYER2_STATE = 1 ;
+}
+[e :U 376 ]
+"352
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 352:             else if(REACTO_TABLE.PLAYER1_STATE == 2 && REACTO_TABLE.PLAYER2_STATE == 1){
+[e $ ! == . _GC_TABLE 0 -> 1 `i 377  ]
+{
+"353
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 353:                 delay(60000);
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"354
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 354:                 REACTO_TABLE.PLAYER2_STATE = 2;
+[e = _TTTO_TABLE ( _TTT_UPDATE (4 , , , _TTTO_TABLE -> 0 `i -> 1 `i . _TTTO_TABLE 4 ]
+"355
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 355:             }
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"356
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 356: 
+[e $UE 358  ]
+"357
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 357:             INTCON3bits.INT1IF = 0;
+}
+[e :U 377 ]
+"359
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 359:          }
+[e $ ! == . _GC_TABLE 0 -> 3 `i 378  ]
+{
+"360
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 360: 
+[e $ ! && == . _REACTO_TABLE 7 -> 2 `i == . _REACTO_TABLE 8 -> 0 `i 379  ]
+{
+"361
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 361:          if(GC_TABLE.PROCESS == 5){
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"362
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 362:             if(WAWO_TABLE.PLAYER1_STATE == 2 && WAWO_TABLE.PLAYER2_STATE == 0){
+[e = . _REACTO_TABLE 8 -> 1 `i ]
+"363
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 363:                 delay(60000);
+}
+[e $U 380  ]
+"364
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 364:                 WAWO_TABLE.PLAYER2_STATE = 1 ;
+[e :U 379 ]
+[e $ ! && == . _REACTO_TABLE 7 -> 2 `i == . _REACTO_TABLE 8 -> 1 `i 381  ]
+{
+"365
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 365:             }
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"366
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 366: 
+[e = . _REACTO_TABLE 8 -> 2 `i ]
+"367
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 367:             INTCON3bits.INT1IF = 0;
+}
+[e :U 381 ]
+[e :U 380 ]
+"369
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 369:         }
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"370
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 370:         INTCON3bits.INT1IF = 0;
+[e $UE 358  ]
+"371
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 371:         return;
+}
+[e :U 378 ]
+"373
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 373: }
+[e $ ! == . _GC_TABLE 0 -> 5 `i 382  ]
+{
+"374
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 374: 
+[e $ ! && == . _WAWO_TABLE 10 -> 2 `i == . _WAWO_TABLE 11 -> 0 `i 383  ]
+{
+"375
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 375: void __attribute__((picinterrupt(("low_priority")))) Lo_ISR(void)
+[e ( _delay (1 -> -> 60000 `l `ul ]
+"376
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 376: {
+[e = . _WAWO_TABLE 11 -> 1 `i ]
+"377
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 377:     if(PIR1bits.ADIF == 1){
+}
+[e :U 383 ]
+"379
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 379:         TTTO_TABLE.CURSOR = GC_TABLE.ADC_VALUE / 114;
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"380
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 380:         PIR1bits.ADIF = 0;
+[e $UE 358  ]
+"381
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 381:         return;
+}
+[e :U 382 ]
+"382
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 382:     }
+[e = . . _INTCON3bits 0 0 -> -> 0 `i `uc ]
+"383
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 383:     if(PIR1bits.TMR2IF == 1){
+[e $UE 358  ]
+"384
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 384:         if(GC_TABLE.PROCESS == 3){
+}
+[e :U 374 ]
+"385
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 385:             REACTO_TABLE.tick100us++;
+[e :UE 358 ]
+}
+[v $root$_Lo_ISR `(v ~T0 @X0 0 e ]
+"387
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 387:             WAWO_TABLE.tick100us++;
+[v _Lo_ISR `(v ~T42 @X0 1 ef ]
+"388
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 388:         }
+{
+[e :U _Lo_ISR ]
+[f ]
+"389
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 389:         PIR1bits.TMR2IF = 0;
+[e $ ! == -> . . _PIR1bits 0 6 `i -> 1 `i 385  ]
+{
+"390
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 390:         return;
+[e = . _GC_TABLE 4 + << -> _ADRESH `i -> 2 `i >> -> _ADRESL `i -> 6 `i ]
+"391
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 391:     }
+[e = . _TTTO_TABLE 4 / . _GC_TABLE 4 -> 114 `i ]
+"392
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 392: 
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"393
+[; ;../../Desktop/2025_MICROCHIP_FINAL_PROJECT_2.0-main/2025_MICROCHIP_FINAL_PROJECT_2.0-main/main.c: 393: }
+[e $UE 384  ]
+"394
+}
+[e :U 385 ]
+"395
+[e $ ! == -> . . _PIR1bits 0 1 `i -> 1 `i 386  ]
+{
+"396
+[e $ ! == . _GC_TABLE 0 -> 3 `i 387  ]
+{
+"397
+[e ++ . _REACTO_TABLE 6 -> -> 1 `i `Vul ]
+"398
+}
+[e $U 388  ]
+[e :U 387 ]
+[e $ ! == . _GC_TABLE 0 -> 5 `i 389  ]
+{
+"399
+[e ++ . _WAWO_TABLE 9 -> -> 1 `i `Vul ]
+"400
+}
+[e :U 389 ]
+[e :U 388 ]
+"401
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"402
+[e $UE 384  ]
+"403
+}
+[e :U 386 ]
+"405
+[e :UE 384 ]
+}
