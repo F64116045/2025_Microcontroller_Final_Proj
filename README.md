@@ -1,9 +1,5 @@
 # PIC18F HMI Interactive Gaming Console
 
-[Platform](https://img.shields.io/badge/Platform-PIC18F4520-blue)
-
-[Language](https://img.shields.io/badge/Language-C%20%7C%20Python-green)
-
 ## Project Overview
 
 This project implements a complete Interactive Gaming System. The core system utilizes a **PIC18F4520** microcontroller for real-time logic processing and hardware control, while the host system employs Python (Pygame) for visual rendering and audio processing.
